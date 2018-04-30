@@ -11,9 +11,9 @@
 <body class="shower list">
 
 <header class="caption">
-    <h1>Различия команд в Управлении разработки</h1>
+    <h1>Различия команд разработки в Контуре</h1>
 
-    <p><a href="https://staff.skbkontur.ru/profile/lukanin" target="_blank">Игорь Луканин</a>, февраль 2018</p>
+    <p><a href="https://staff.skbkontur.ru/profile/lukanin" target="_blank">Игорь Луканин</a>, май 2018</p>
 
     <style>
         .caption {
@@ -94,64 +94,90 @@
             <li class="next">Знания о предметной области</li>
             <li class="next">Количество пользователей</li>
             <li class="next">Зрелость продуктов (активные, на старте, на поддержке)</li>
-            <li class="next">Покрытие тестами (рефакторинг, регрессия)</li>
-            <li class="next"><i>Тестирование:</i> автоматизация (нет и не будет → ... → нужно уметь)</li>
-        </ul>
-    </div>
-</section>
-
-<section class="slide">
-    <div>
-        <h2>Продукты, продолжение</h2>
-        <ul>
-            <li class="next">Сезонность нагрузки</li>
             <li class="next">Наличие дедлайнов (законы, зависимости от других команд)</li>
-            <li class="next">Наличие SLA, интеграций и публичного API</li>
+            <li class="next">Платформы: backend, API, web, mobile, desktop</li>
         </ul>
     </div>
 </section>
 
 <section class="slide">
     <div>
-        <h2>Технологии</h2>
+        <h2>Технологии: бэкенд</h2>
         <ul>
-            <li class="next">Платформы (backend, web, mobile, desktop, API)</li>
-            <li class="next">Языки программирования и другие технологии
-                <ul>
-                    <li>C#, CIL, С++, Java, Kotlin, Scala, R, Python, Ruby, Node.js, Go, 1С, VBA</li>
-                    <li>ES 5–6, Flow, TypeScript, React, Angular</li>
-                </ul>
+            <li class="next">Языки программирования и платформы:<br/>
+                C#&thinsp;/&thinsp;CIL,
+                С++,
+                Java&thinsp;/&thinsp;Kotlin,
+                Node.js,
+                R&thinsp;/&thinsp;Python&thinsp;/&thinsp;Scala,
+                Ruby,
+                Go,
+                1С,
+                VBA
             </li>
-            <li class="next"><i>Фронтенд:</i> Retail UI, Billing UI и др. библиотеки компонентов</li>
-        </ul>
-    </div>
-</section>
-
-<section class="slide">
-    <div>
-        <h2>Технологии, продолжение</h2>
-        <ul>
             <li class="next">Хранилища данных
                 <ul>
                     <li>MS SQL Server, PostgreSQL</li>
-                    <li>MongoDB, Cassandra, ClickHouse, <i>Zebra</i></li>
-                    <li>Redis, HDFS, Ceph, <i>Kanso</i></li>
+                    <li>MongoDB, Cassandra, ClickHouse, <mark>Zebra</mark></li>
+                    <li>Redis, HDFS, Ceph, <mark>Kanso</mark></li>
                 </ul>
             </li>
-            <li class="next">Поисковые хранилища и движки (Elasticsearch, Sphinx)</li>
-            <li class="next">Хранилища конфигурации (ZooKeeper, Consul, <i>ClusterConfig</i>)</li>
-            <li class="next">Очереди сообщений (RabbitMQ, Kafka, <i>Echelon</i>)</li>
+            <li class="next">Поисковые хранилища и движки: Elasticsearch, Sphinx</li>
+            <li class="next">Очереди сообщений: RabbitMQ, Kafka, <mark>Echelon</mark></li>
         </ul>
     </div>
 </section>
 
 <section class="slide">
     <div>
-        <h2>Выбирайте команду</h2>
+        <h2>Технологии: фронтенд</h2>
+        <ul>
+            <li class="next">Языки программирования: JavaScript + Flow, TypeScript</li>
+            <li class="next">Фреймворки: React, Angular</li>
+            <li class="next">Библиотеки компонентов:
+                <ul>
+                    <li><a href="https://github.com/skbkontur/retail-ui" target="_blank">Retail UI</a> (React)</li>
+                    <li><a href="https://github.com/skbkontur/billing-ui" target="_blank">Billing UI</a> (React)</li>
+                    <li>библиотека внутренней разработки УИТ (Angular)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="slide">
+    <div>
+        <h2>Технологии: тестирование</h2>
+        <ul>
+            <li class="next">Покрытие тестами (рефакторинг, регрессия)</li>
+            <li class="next">Уровень автоматизации:<br/>
+                <ul>
+                    <li>тестов нет и не будет, уметь не обязательно</li>
+                    <li>тестов нет, но будут, если захочешь</li>
+                    <li>тесты есть, будут учить</li>
+                    <li>тесты есть, нужно уметь</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="slide">
+    <div>
+        <h2>Технологии: дизайн</h2>
+        <ul>
+            <li class="next">Проектирование интерфейсов по <a href="https://guides.kontur.ru" target="_blank">Гайдам</a></li>
+        </ul>
+    </div>
+</section>
+
+<section class="slide">
+    <div>
+        <h2>Изучите команды</h2>
         <ul>
             <li>Сформулируйте, что важно для вас</li>
             <li>Посмотрите <a href="http://vm-testsoft.kontur:3111" target="_blank">классификатор команд</a></li>
-            <li>Спросите о важном представителей команд</li>
+            <li>Получите ответы на свои вопросы</li>
         </ul>
     </div>
 </section>
